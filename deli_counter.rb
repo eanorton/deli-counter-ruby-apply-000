@@ -1,11 +1,11 @@
 katz_deli = []
 
 def line(katz_deli)
-    if katz_deli.empty?
+    if katz_deli.empty? #.empty? is checking the array to see if it contains any elements. If true(empty) puts... 
       puts "The line is currently empty."
     else
       current_line = "The line is currently: "
-      
+
 
 def take_a_number(katz_deli, name)
   katz_deli.push(name) #.push adds an element (name) to the end of the array (katz_deli)
