@@ -4,8 +4,8 @@ def line(katz_deli)
     if katz_deli.empty? #.empty? is checking the array to see if it contains any elements. If true(empty) puts...
       puts "The line is currently empty."
     else
-      current_line = "The line is currently: "
-      katz_deli.each.with_index(1) {|name, i| puts current_line << "#{i}. #{name}"}
+      line_with_people = "The line is currently: "
+      katz_deli.each.with_index(1) {|name, i| puts line_with_people << "#{i}. #{name}"}
     end
   end
 
