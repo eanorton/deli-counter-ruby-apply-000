@@ -15,5 +15,4 @@ def now_serving(katz_deli)
   else
     puts "Now serving: "
   end
-
 end
