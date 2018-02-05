@@ -5,12 +5,12 @@ def line(katz_deli)
       puts "The line is currently empty."
     else
       current_line = "The line is currently: "
-      katz_deli.each do |name, i|
-        current_line.push("#{i}. #{name}")
+      katz_deli.each.with_index do |name, i|
+        current_line.push("#{i} . #{name}")
       end
       puts current_line
     end
-end
+  end
 
 def take_a_number(katz_deli, name)
   katz_deli.push(name) #.push adds an element (name) to the end of the array (katz_deli)
