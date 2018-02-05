@@ -10,7 +10,7 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  if katz_deli.empty? #.empty? is checking the array to see if it contains any elements. 
+  if katz_deli.empty? #.empty? is checking the array to see if it contains any elements.
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli.first}." #.first calls on the first person in our line/array
