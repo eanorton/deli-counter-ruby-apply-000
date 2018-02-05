@@ -5,7 +5,10 @@ def line(katz_deli)
       puts "The line is currently empty."
     else
       current_line = "The line is currently: "
-      
+      katz_deli.each do |name, i|
+        current_line.push("#{i}. #{name}")
+      end
+      puts current_line
     end
 end
 
@@ -15,7 +18,7 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  if katz_deli.empty? #.empty? is checking the array to see if it contains any elements. 
+  if katz_deli.empty? #.empty? is checking the array to see if it contains any elements.
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli.first}." #.first calls on the first person in our line/array
