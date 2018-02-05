@@ -1,10 +1,16 @@
 katz_deli = []
 
 def line(katz_deli)
-    if katz_deli.empty? #.empty? is checking the array to see if it contains any elements. If true(empty) puts... 
+    if katz_deli.empty? #.empty? is checking the array to see if it contains any elements. If true(empty) puts...
       puts "The line is currently empty."
     else
       current_line = "The line is currently: "
+      katz_deli.each do |name, i|
+        current_line.push(" #{i}. #{name}")
+      end
+      puts current_line
+    end
+  end
 
 
 def take_a_number(katz_deli, name)
