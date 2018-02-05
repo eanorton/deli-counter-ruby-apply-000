@@ -1,14 +1,15 @@
 katz_deli = []
 
 def line(katz_deli)
-    if katz_deli.empty? 
+    if katz_deli.empty?
       puts "The line is currently empty."
     else
+      puts "The line is currently: "
     end
 end
 
 def take_a_number(katz_deli, name)
-  katz_deli.push(name) #.push adds an element (name) to the end of the array (katz_deli) 
+  katz_deli.push(name) #.push adds an element (name) to the end of the array (katz_deli)
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
