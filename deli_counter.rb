@@ -6,7 +6,7 @@ def line(katz_deli)
     else
       line_with_people = "The line is currently:" #setting default return for the line with people since we have the return for if it's empty.
       katz_deli.each.with_index(1) do |name, i| #iterating over the array with .each.with_index(1) to start the count from the 1 in index rather than 0
-        line_with_people << " #{i}. #{name}" #tacking on name and spot in line
+        line_with_people << " #{i}. #{name}" #tacking on name and spot in line. 
       end
       puts line_with_people
     end
