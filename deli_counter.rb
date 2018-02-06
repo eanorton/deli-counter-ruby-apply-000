@@ -8,7 +8,7 @@ def line(katz_deli)
       katz_deli.each.with_index(1) do |person, i|
         line_with_people << " #{i}. #{person}"
       end
-      puts current_line
+      puts line_with_people
     end
   end
 
