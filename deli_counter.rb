@@ -8,6 +8,7 @@ def line(katz_deli)
       katz_deli.each.with_index(1) {|name, i| puts line_with_people << "#{i}. #{name}"}
     end
   end
+end
 
 
 def take_a_number(katz_deli, name)
