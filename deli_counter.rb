@@ -7,6 +7,7 @@ def line(katz_deli)
       line_with_people = "The line is currently: "
       katz_deli.each.with_index(1) do |name, i|
         puts line_with_people.push("#{i}. #{name}")
+      
   end
 end
 
