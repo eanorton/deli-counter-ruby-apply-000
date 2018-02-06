@@ -5,7 +5,8 @@ def line(katz_deli)
       puts "The line is currently empty."
   else
       line_with_people = "The line is currently: "
-      katz_deli.each.with_index(1) {|name, i| puts line_with_people << "#{i}. #{name}"}
+      katz_deli.each.with_index(1) do |name, i|
+        puts line_with_people.push("#{i}. #{name}")}
   end
 end
 
